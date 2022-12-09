@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: white;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 15px;
+  left: 23%;
+  transform: translateX(-50%);
+  color: white;
+  background: url("https://cdn.shopify.com/s/files/1/0266/1371/0884/files/Amazfit-new-watches-1200x819_74df6386-86a7-4d17-af2f-7b9a155e6daf.jpg?v=1657875605");
+  background-size: auto 200%;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine 5s linear infinite;
+  animation: shine 5s linear infinite;
+}
+
+h1:nth-child(2) {
+  top: 50vh;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  position: relative;
+  bottom: 6px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  gap: 5%;
+  padding-top: 40px;
+}
+
+.content {
+  width: 295px;
+  height: 309px;
+  margin: 14px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.16);
+  transition: 0.4s;
+  background: white;
+}
+
+.content:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -8px);
+}
+
+img {
+  width: 178px;
+  height: 256px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes shine {
+  from {
+    background-position: center 0;
+  }
+  to {
+    background-position: center 200%;
+  }
+}
+@keyframes shine {
+  from {
+    background-position: center 0;
+  }
+  to {
+    background-position: center 200%;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    width: 189px;
+    height: 208px;
+    display: block;
+  }
+  img {
+    width: 98px;
+    height: 137px;
+    display: block;
+  }
+  .gallery {
+    gap: 10px;
+    padding-top: 50px;
+  }
+  h1 {
+    margin-left: 70px;
+    font-size: 40px;
+  }
+} /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
